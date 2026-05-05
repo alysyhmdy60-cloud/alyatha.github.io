@@ -3,64 +3,77 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>مؤسسة اليثى للتشطيبات والديكور</title>
+<title>مؤسسة اليثى للتشطيبات</title>
 
 <style>
 body {
   margin:0;
   font-family: Arial;
-  background:#f5f5f5;
   direction:rtl;
+  background:#0f0f0f;
+  color:#fff;
 }
 
-/* الهيدر */
+/* هيدر */
 header {
-  background:#111;
-  color:#fff;
+  background:linear-gradient(45deg,#000,#222);
   text-align:center;
   padding:60px 20px;
 }
-header h1 { color:#C9A14A; }
+header h1 {
+  color:#C9A14A;
+  font-size:32px;
+}
+header p {
+  font-size:18px;
+}
 
-/* القائمة */
+/* منيو */
 nav {
   background:#C9A14A;
-  padding:10px;
   text-align:center;
+  padding:12px;
 }
 nav a {
   color:#fff;
-  margin:10px;
+  margin:8px;
   text-decoration:none;
   font-weight:bold;
+  display:inline-block;
 }
 
 /* الأقسام */
 .section {
-  padding:40px;
-  text-align:center;
+  padding:50px 20px;
 }
-
-h2 { color:#C9A14A; }
+.section h2 {
+  text-align:center;
+  color:#C9A14A;
+}
 
 /* الصور */
 .gallery {
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-}
-.gallery img {
-  width:280px;
-  margin:10px;
-  border-radius:10px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
 }
 
-/* منشور تسويقي */
+.gallery img {
+  width:100%;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.gallery img:hover {
+  transform:scale(1.05);
+}
+
+/* عرض */
 .offer {
   background:#C9A14A;
-  color:#fff;
+  color:#000;
+  text-align:center;
   padding:30px;
-  margin:20px;
   border-radius:10px;
   font-size:20px;
 }
@@ -70,20 +83,36 @@ h2 { color:#C9A14A; }
   position:fixed;
   bottom:20px;
   right:20px;
-  background:green;
+  background:#25D366;
   color:#fff;
   padding:15px;
   border-radius:50%;
   text-decoration:none;
-  font-size:20px;
+  font-size:22px;
 }
 
-/* الفوتر */
+/* فوتر */
 footer {
-  background:#111;
-  color:#fff;
+  background:#000;
   text-align:center;
   padding:20px;
+}
+
+/* 📱 موبايل */
+@media(max-width:768px){
+  .gallery {
+    grid-template-columns:repeat(2,1fr);
+  }
+  header h1 {
+    font-size:24px;
+  }
+}
+
+/* 💻 شاشات كبيرة */
+@media(min-width:1200px){
+  .gallery {
+    grid-template-columns:repeat(5,1fr);
+  }
 }
 </style>
 
@@ -93,88 +122,75 @@ footer {
 
 <header>
 <h1>مؤسسة اليثى للديكور والتشطيبات</h1>
-<p>تشطيبات فاخرة بأعلى جودة في الرياض</p>
-<a href="tel:0554778625" style="color:#fff;">📞 0554778625</a>
+<p>أفضل أعمال البلاط والرخام والديكور في الرياض</p>
+<p>📞 0554778625</p>
 </header>
 
 <nav>
-<a href="#decor">ديكورات</a>
+<a href="#offer">عرض</a>
 <a href="#tiles">بلاط</a>
 <a href="#porcelain">بورسلين</a>
+<a href="#decor">ديكورات</a>
 <a href="#paint">دهانات</a>
-<a href="#parquet">باركيه</a>
-<a href="#gypsum">جبس بورد</a>
-<a href="#offer">عرض خاص</a>
+<a href="#gypsum">جبس</a>
 </nav>
 
-<!-- عرض تسويقي -->
 <section id="offer" class="section">
 <div class="offer">
-🔥 عرض خاص لفترة محدودة 🔥 <br><br>
-خصم 15% على جميع أعمال البلاط والديكور <br>
-تنفيذ سريع - جودة عالية - أسعار منافسة <br><br>
-📞 اتصل الآن واحجز شغلك قبل انتهاء العرض
+🔥 خصم 20% لفترة محدودة 🔥<br>
+جودة عالية - تنفيذ سريع - أسعار منافسة<br>
+📞 احجز الآن
 </div>
 </section>
 
-<!-- ديكورات -->
-<section id="decor" class="section">
-<h2>ديكورات معارضنا في الرياض</h2>
-<div class="gallery">
-<img src="https://via.placeholder.com/300">
-<img src="https://via.placeholder.com/300">
-</div>
-</section>
-
-<!-- البلاط -->
 <section id="tiles" class="section">
 <h2>قسم البلاط</h2>
 <div class="gallery">
-<img src="https://via.placeholder.com/300">
-<img src="https://via.placeholder.com/300">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+<img src="https://images.unsplash.com/photo-1598300053653-8c4f3f48e6dc">
+<img src="https://images.unsplash.com/photo-1582582494700-c6e3c9b4c8b3">
+<img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed">
 </div>
 </section>
 
-<!-- البورسلين -->
 <section id="porcelain" class="section">
 <h2>قسم البورسلين</h2>
 <div class="gallery">
-<img src="https://via.placeholder.com/300">
-<img src="https://via.placeholder.com/300">
+<img src="https://images.unsplash.com/photo-1588854337221-4cf9fa96059c">
+<img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6">
+<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d">
 </div>
 </section>
 
-<!-- الدهانات -->
+<section id="decor" class="section">
+<h2>ديكورات حديثة</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1600585152915-d208bec867a1">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+<img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf">
+</div>
+</section>
+
 <section id="paint" class="section">
 <h2>قسم الدهانات</h2>
 <div class="gallery">
-<img src="https://via.placeholder.com/300">
-<img src="https://via.placeholder.com/300">
+<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
+<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d">
 </div>
 </section>
 
-<!-- الباركيه -->
-<section id="parquet" class="section">
-<h2>قسم الباركيه</h2>
-<div class="gallery">
-<img src="https://via.placeholder.com/300">
-<img src="https://via.placeholder.com/300">
-</div>
-</section>
-
-<!-- الجبس -->
 <section id="gypsum" class="section">
-<h2>قسم الجبس بورد</h2>
+<h2>الجبس بورد</h2>
 <div class="gallery">
-<img src="https://via.placeholder.com/300">
-<img src="https://via.placeholder.com/300">
+<img src="https://images.unsplash.com/photo-1600585154203-ccf8c3d1f1df">
+<img src="https://images.unsplash.com/photo-1588854337221-4cf9fa96059c">
 </div>
 </section>
 
 <a href="https://wa.me/966554778625" class="whatsapp">💬</a>
 
 <footer>
-<p>📞 0554778625 - الرياض</p>
+<p>© مؤسسة اليثى - الرياض</p>
 </footer>
 
 </body>
