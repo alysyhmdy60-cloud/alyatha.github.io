@@ -18,12 +18,9 @@ header {
   background:#111;
   color:#fff;
   text-align:center;
-  padding:50px 20px;
+  padding:60px 20px;
 }
-
-header h1 {
-  color:#C9A14A;
-}
+header h1 { color:#C9A14A; }
 
 /* القائمة */
 nav {
@@ -31,7 +28,6 @@ nav {
   padding:10px;
   text-align:center;
 }
-
 nav a {
   color:#fff;
   margin:10px;
@@ -45,9 +41,7 @@ nav a {
   text-align:center;
 }
 
-h2 {
-  color:#C9A14A;
-}
+h2 { color:#C9A14A; }
 
 /* الصور */
 .gallery {
@@ -55,14 +49,23 @@ h2 {
   flex-wrap:wrap;
   justify-content:center;
 }
-
 .gallery img {
   width:280px;
   margin:10px;
   border-radius:10px;
 }
 
-/* زر واتساب عائم */
+/* منشور تسويقي */
+.offer {
+  background:#C9A14A;
+  color:#fff;
+  padding:30px;
+  margin:20px;
+  border-radius:10px;
+  font-size:20px;
+}
+
+/* زر واتساب */
 .whatsapp {
   position:fixed;
   bottom:20px;
@@ -90,11 +93,10 @@ footer {
 
 <header>
 <h1>مؤسسة اليثى للديكور والتشطيبات</h1>
-<p>أفضل أعمال البلاط والرخام والسيراميك في الرياض</p>
+<p>تشطيبات فاخرة بأعلى جودة في الرياض</p>
 <a href="tel:0554778625" style="color:#fff;">📞 0554778625</a>
 </header>
 
-<!-- القائمة -->
 <nav>
 <a href="#decor">ديكورات</a>
 <a href="#tiles">بلاط</a>
@@ -102,8 +104,18 @@ footer {
 <a href="#paint">دهانات</a>
 <a href="#parquet">باركيه</a>
 <a href="#gypsum">جبس بورد</a>
-<a href="#works">أعمالنا</a>
+<a href="#offer">عرض خاص</a>
 </nav>
+
+<!-- عرض تسويقي -->
+<section id="offer" class="section">
+<div class="offer">
+🔥 عرض خاص لفترة محدودة 🔥 <br><br>
+خصم 15% على جميع أعمال البلاط والديكور <br>
+تنفيذ سريع - جودة عالية - أسعار منافسة <br><br>
+📞 اتصل الآن واحجز شغلك قبل انتهاء العرض
+</div>
+</section>
 
 <!-- ديكورات -->
 <section id="decor" class="section">
@@ -159,16 +171,6 @@ footer {
 </div>
 </section>
 
-<!-- أعمالنا -->
-<section id="works" class="section">
-<h2>أعمالنا السابقة</h2>
-<div class="gallery">
-<img src="https://via.placeholder.com/300">
-<img src="https://via.placeholder.com/300">
-</div>
-</section>
-
-<!-- زر واتساب -->
 <a href="https://wa.me/966554778625" class="whatsapp">💬</a>
 
 <footer>
