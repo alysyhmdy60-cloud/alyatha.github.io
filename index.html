@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>مؤسسة اليثى للتشطيبات</title>
+<title>سعود للديكورات والبورسلان والتشطيبات</title>
 
 <style>
 body {
@@ -18,7 +18,7 @@ body {
 header {
   background:linear-gradient(45deg,#000,#222);
   text-align:center;
-  padding:60px 20px;
+  padding:70px 20px;
 }
 header h1 {
   color:#C9A14A;
@@ -39,7 +39,6 @@ nav a {
   margin:8px;
   text-decoration:none;
   font-weight:bold;
-  display:inline-block;
 }
 
 /* الأقسام */
@@ -51,21 +50,34 @@ nav a {
   color:#C9A14A;
 }
 
-/* الصور */
+/* معرض الصور */
 .gallery {
   display:grid;
   grid-template-columns:repeat(4,1fr);
   gap:15px;
 }
 
+/* الصور */
 .gallery img {
   width:100%;
-  border-radius:10px;
-  transition:0.3s;
+  border-radius:12px;
+  transition:0.4s;
+  cursor:pointer;
 }
 
+/* تأثيرات ذكية */
 .gallery img:hover {
-  transform:scale(1.05);
+  transform:scale(1.08);
+  box-shadow:0 0 20px #C9A14A;
+}
+
+/* تأثير دخول */
+.fade-in {
+  animation:fade 1.5s ease;
+}
+@keyframes fade {
+  from {opacity:0; transform:translateY(20px);}
+  to {opacity:1; transform:translateY(0);}
 }
 
 /* عرض */
@@ -78,14 +90,14 @@ nav a {
   font-size:20px;
 }
 
-/* زر واتساب */
+/* زر واتساب مباشر */
 .whatsapp {
   position:fixed;
   bottom:20px;
   right:20px;
   background:#25D366;
   color:#fff;
-  padding:15px;
+  padding:16px;
   border-radius:50%;
   text-decoration:none;
   font-size:22px;
@@ -98,20 +110,10 @@ footer {
   padding:20px;
 }
 
-/* 📱 موبايل */
+/* موبايل */
 @media(max-width:768px){
   .gallery {
     grid-template-columns:repeat(2,1fr);
-  }
-  header h1 {
-    font-size:24px;
-  }
-}
-
-/* 💻 شاشات كبيرة */
-@media(min-width:1200px){
-  .gallery {
-    grid-template-columns:repeat(5,1fr);
   }
 }
 </style>
@@ -121,8 +123,8 @@ footer {
 <body>
 
 <header>
-<h1>مؤسسة اليثى للديكور والتشطيبات</h1>
-<p>أفضل أعمال البلاط والرخام والديكور في الرياض</p>
+<h1>سعود للديكورات والبورسلان والتشطيبات</h1>
+<p>تنفيذ جميع أعمال البلاط والديكور باحترافية عالية في الرياض</p>
 <p>📞 0554778625</p>
 </header>
 
@@ -135,62 +137,71 @@ footer {
 <a href="#gypsum">جبس</a>
 </nav>
 
-<section id="offer" class="section">
+<section id="offer" class="section fade-in">
 <div class="offer">
 🔥 خصم 20% لفترة محدودة 🔥<br>
-جودة عالية - تنفيذ سريع - أسعار منافسة<br>
-📞 احجز الآن
+شغل نظيف - سرعة تنفيذ - أسعار منافسة<br>
+📞 احجز الآن عبر واتساب
 </div>
 </section>
 
-<section id="tiles" class="section">
+<section id="tiles" class="section fade-in">
 <h2>قسم البلاط</h2>
 <div class="gallery">
 <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
 <img src="https://images.unsplash.com/photo-1598300053653-8c4f3f48e6dc">
 <img src="https://images.unsplash.com/photo-1582582494700-c6e3c9b4c8b3">
 <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed">
+<img src="https://images.unsplash.com/photo-1600585152915-d208bec867a1">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
 </div>
 </section>
 
-<section id="porcelain" class="section">
+<section id="porcelain" class="section fade-in">
 <h2>قسم البورسلين</h2>
 <div class="gallery">
 <img src="https://images.unsplash.com/photo-1588854337221-4cf9fa96059c">
 <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6">
 <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d">
+<img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf">
 </div>
 </section>
 
-<section id="decor" class="section">
+<section id="decor" class="section fade-in">
 <h2>ديكورات حديثة</h2>
 <div class="gallery">
 <img src="https://images.unsplash.com/photo-1600585152915-d208bec867a1">
 <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
 <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf">
+<img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6">
 </div>
 </section>
 
-<section id="paint" class="section">
+<section id="paint" class="section fade-in">
 <h2>قسم الدهانات</h2>
 <div class="gallery">
 <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
 <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d">
+<img src="https://images.unsplash.com/photo-1598300053653-8c4f3f48e6dc">
 </div>
 </section>
 
-<section id="gypsum" class="section">
+<section id="gypsum" class="section fade-in">
 <h2>الجبس بورد</h2>
 <div class="gallery">
 <img src="https://images.unsplash.com/photo-1600585154203-ccf8c3d1f1df">
 <img src="https://images.unsplash.com/photo-1588854337221-4cf9fa96059c">
+<img src="https://images.unsplash.com/photo-1598300053653-8c4f3f48e6dc">
 </div>
 </section>
 
-<a href="https://wa.me/966554778625" class="whatsapp">💬</a>
+<!-- زر واتساب مباشر -->
+<a href="https://wa.me/966554778625?text=مرحبا%20أريد%20الاستفسار%20عن%20أعمال%20التشطيبات" class="whatsapp">
+💬
+</a>
 
 <footer>
-<p>© مؤسسة اليثى - الرياض</p>
+<p>© سعود للديكورات - الرياض</p>
 </footer>
 
 </body>
